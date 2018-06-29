@@ -9,10 +9,11 @@ function frameIt() {
 }
 
 function pressIt() {
-  var letter = document.getElementById("typing").value;
-  if (letter === "G") {
-    alert("you pressed G");
-  } 
+  $(document).on('keydown', function(key){
+    if(key.which == 71) {
+      alert('G was pressed');
+    }
+  })
 }
 
 function submitIt() {
