@@ -1,16 +1,5 @@
 //define functions here
 
-$(document).ready(function(){
-
-// call functions here
-$('p').click(getIt())
-
-$('img').load(frameIt())
-
-$('#typing').keydown(pressIt())
-
-});
-
 function getIt() {
   alert ("Hey!");
 }
@@ -29,3 +18,15 @@ function pressIt() {
 function submitIt() {
   alert ('Your form is going to be submitted now.');
 }
+
+
+$(document).ready(function(){
+
+// call functions here
+$('p').click(getIt())
+
+$('img').load(frameIt())
+
+
+});
+
