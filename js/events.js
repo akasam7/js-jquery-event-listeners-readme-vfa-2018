@@ -3,16 +3,29 @@
 $(document).ready(function(){
 
 // call functions here
-$('p').on("eventname", getIt())
+$('p').click(getIt())
 
-$('img').on('load', frameIt())
+$('img').load(frameIt())
+
+$('#typing').keydown(pressIt())
 
 });
 
 function getIt() {
-  return "Hey!"
+  alert ("Hey!");
 }
 
 function frameIt() {
-  $('img').append(".tasty")
+  $("img").addClass('tasty');
+}
+
+function pressIt() {
+  var letter = document.getElementById("typing").value;
+  if (letter === "G") {
+    alert("you pressed G");
+  } 
+}
+
+function submitIt() {
+  alert ('Your form is going to be submitted now.');
 }
